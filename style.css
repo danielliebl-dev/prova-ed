@@ -1,1 +1,112 @@
+:root {
+  --bg-color: #0d1b2a;
+  --card-bg: #1b263b;
+  --text-main: #ffffff;
+  --text-muted: #e0e1dd;
+  --accent-gold: #ffd700;
+  --accent-green: #2ec4b6;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.school-info {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--accent-gold);
+}
+
+.subject-info {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.news-card {
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.tag {
+  background-color: var(--accent-green);
+  color: #000;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 15px 0 10px 0;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.meta-info {
+  font-size: 0.85rem;
+  color: var(--accent-gold);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.content p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.interactive-btn {
+  background-color: var(--accent-gold);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.interactive-btn:hover {
+  background-color: #e6c200;
+  transform: scale(1.03);
+}
