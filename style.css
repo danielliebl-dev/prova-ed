@@ -11,6 +11,8 @@
   <header>
     <p class="school-info">Colégio Estadual Frederico Guilherme Giese</p>
     <p class="subject-info">Disciplina: Ed. e Prog IA</p>
+    <p><strong>Autor:</strong> Daniel Carlos Liebl</p>
+        <p><strong>Data:</strong> <span id="current-date"></span></p>
   </header>
 
   <main class="container">
