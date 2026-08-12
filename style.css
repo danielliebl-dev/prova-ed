@@ -1,114 +1,39 @@
-:root {
-  --bg-color: #0d1b2a;
-  --card-bg: #1b263b;
-  --text-main: #ffffff;
-  --text-muted: #e0e1dd;
-  --accent-gold: #ffd700;
-  --accent-green: #2ec4b6;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícia - Copa do Mundo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+  <header>
+    <p class="school-info">Colégio Estadual Frederico Guilherme Giese</p>
+    <p class="subject-info">Disciplina: Ed. e Prog IA</p>
+  </header>
 
-body {
-  background-color: var(--bg-color);
-  color: var(--text-main);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
+  <main class="container">
+    <article class="news-card">
+      <span class="tag">Copa do Mundo</span>
+      <h1 id="title">Brasil faz atuação histórica e garante vaga nas quartas de final com goleada</h1>
+      <h2 id="subtitle">A seleção brasileira deu um show de futebol em campo, dominou a partida do início ao fim e empolgou a torcida.</h2>
+      
+      <div class="meta-info">
+        <p><strong>Autor:</strong> Daniel Carlos Liebl</p>
+        <p><strong>Data:</strong> <span id="current-date"></span></p>
+      </div>
 
-header {
-  text-align: center;
-  margin-bottom: 25px;
-  border-bottom: 2px solid var(--accent-gold);
-  padding-bottom: 10px;
-  width: 100%;
-  max-width: 700px;
-}
+      <div class="content">
+        <p>A Seleção Brasileira protagonizou um momento inesquecível na Copa do Mundo ao aplicar uma goleada avassaladora e garantir de forma categórica a sua vaga nas quartas de final do torneio. Desde os primeiros minutos de jogo, o time demonstrou um domínio tático absoluto, imposição física admirável e extrema precisão nos passes, anulando totalmente as investidas da equipe adversária do começo ao fim.</p>
+        <p>Com jogadas trabalhadas de pé em pé, triangulações rápidas no campo de ataque e finalizações impecáveis de fora da área, a equipe construiu o placar elástico ainda na primeira etapa da partida. Na segunda metade do confronto, mantendo a posse de bola com serenidade, paciência e inteligência, o elenco administrou a vantagem sem sofrer qualquer susto defensivo até o apito final.</p>
+        <p>Nas arquibancadas lotadas do estádio e em todas as cidades brasileiras, os torcedores celebraram cada gol com imenso entusiasmo, reacendendo a paixão nacional e fortalecendo o tão esperado sonho do hexacampeonato mundial.</p>
+        
+        <button id="like-btn" class="interactive-btn">❤️ Curtir Notícia (<span id="like-count">0</span>)</button>
+      </div>
+    </article>
+  </main>
 
-.school-info {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: var(--accent-gold);
-}
-
-.subject-info {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-.container {
-  width: 100%;
-  max-width: 700px;
-}
-
-.news-card {
-  background-color: var(--card-bg);
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-.tag {
-  background-color: var(--accent-green);
-  color: #000;
-  font-weight: bold;
-  font-size: 0.8rem;
-  padding: 4px 10px;
-  border-radius: 4px;
-  text-transform: uppercase;
-}
-
-h1 {
-  font-size: 1.6rem;
-  margin: 15px 0 10px 0;
-  color: #ffffff;
-  line-height: 1.3;
-}
-
-h2 {
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: var(--text-muted);
-  line-height: 1.4;
-  margin-bottom: 20px;
-}
-
-.meta-info {
-  font-size: 0.85rem;
-  color: var(--accent-gold);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px 0;
-  margin-bottom: 20px;
-}
-
-.content p {
-  line-height: 1.6;
-  margin-bottom: 16px;
-  color: var(--text-muted);
-}
-
-.interactive-btn {
-  background-color: var(--accent-gold);
-  color: #000;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: transform 0.2s, background-color 0.2s;
-}
-
-.interactive-btn:hover {
-  background-color: #e6c200;
-  transform: scale(1.03);
-}
+  <script src="script.js"></script>
+</body>
+</html>
